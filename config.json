@@ -1,0 +1,52 @@
+{
+  "app_name": "ATK Video AI Organizer",
+  "version": "1.0.0",
+  "offline_mode": true,
+  "theme": "dark",
+  "processing_profile": "BALANCED",
+  "vram_limit_gb": 5.5,
+  "database_path": "data/atk_video_organizer.db",
+  "thumbnail_cache_dir": "data/thumbnails",
+  "models_dir": "data/models",
+  "supported_extensions": [
+    ".mp4", ".mov", ".mkv", ".avi", ".webm", 
+    ".m4v", ".wmv", ".flv", ".mpeg", ".mpg", ".3gp"
+  ],
+  "frame_sampling_profiles": {
+    "FAST": {
+      "sample_interval_sec": 3.0,
+      "max_frames_per_video": 10,
+      "scene_change_threshold": 0.4,
+      "vlm_enabled": false,
+      "whisper_model": "tiny",
+      "object_model": "yolov8n",
+      "ocr_enabled": false
+    },
+    "BALANCED": {
+      "sample_interval_sec": 1.5,
+      "max_frames_per_video": 20,
+      "scene_change_threshold": 0.3,
+      "vlm_enabled": true,
+      "vlm_model": "florence2-base",
+      "whisper_model": "small.en",
+      "object_model": "yolov8s",
+      "ocr_enabled": true
+    },
+    "ACCURATE": {
+      "sample_interval_sec": 0.5,
+      "max_frames_per_video": 50,
+      "scene_change_threshold": 0.2,
+      "vlm_enabled": true,
+      "vlm_model": "moondream2",
+      "whisper_model": "medium.en",
+      "object_model": "yolov8m",
+      "ocr_enabled": true
+    }
+  },
+  "watched_folders": [],
+  "categories": [
+    "People", "Animals", "Vehicles", "Technology", "Nature", "Food", 
+    "Travel", "Sports", "Gaming", "Memes", "Funny", "Music", "Dance", 
+    "Tutorials", "News", "Family", "Work", "Screenshots", "Miscellaneous"
+  ]
+}

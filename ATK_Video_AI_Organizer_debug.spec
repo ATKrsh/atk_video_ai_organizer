@@ -1,0 +1,36 @@
+﻿# -*- mode: python ; coding: utf-8 -*-
+a = Analysis(
+    [" app.py\],
+ pathex=[\.\],
+ binaries=[],
+ datas=[(\config.json\, \.\), (\ui/styles\, \ui/styles\)],
+ hiddenimports=[\PySide6.QtSvg\,\PySide6.QtXml\,\sqlalchemy.dialects.sqlite\,\sqlite3\,\cv2\,\numpy\,\PIL\,\PIL.Image\],
+ hookspath=[],
+ hooksconfig={},
+ runtime_hooks=[],
+ excludes=[],
+ noarchive=False,
+ optimize=0,
+)
+pyz = PYZ(a.pure)
+exe = EXE(
+ pyz,
+ a.scripts,
+ a.binaries,
+ a.datas,
+ [],
+ name=\ATK_Video_AI_Organizer_debug\,
+ debug=True,
+ bootloader_ignore_signals=False,
+ strip=False,
+ upx=False,
+ upx_exclude=[],
+ runtime_tmpdir=None,
+ console=True,
+ disable_windowed_traceback=False,
+ argv_emulation=False,
+ target_arch=None,
+ codesign_identity=None,
+ entitlements_file=None,
+ icon=None,
+)

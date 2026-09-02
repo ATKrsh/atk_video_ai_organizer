@@ -1,0 +1,155 @@
+/* ATK Video AI Organizer - Premium Dark Theme QSS */
+
+QMainWindow, QDialog {
+    background-color: #0f172a;
+    color: #f8fafc;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+QWidget {
+    color: #f8fafc;
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 13px;
+}
+
+/* Sidebar Navigation */
+#SidebarContainer {
+    background-color: #1e293b;
+    border-right: 1px solid #334155;
+    min-width: 220px;
+    max-width: 220px;
+}
+
+#SidebarTitle {
+    font-size: 16px;
+    font-weight: bold;
+    color: #38bdf8;
+    padding: 15px 10px;
+}
+
+#OfflineBadge {
+    background-color: #059669;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 11px;
+    padding: 4px 8px;
+    border-radius: 4px;
+}
+
+QPushButton.NavButton {
+    background-color: transparent;
+    color: #94a3b8;
+    text-align: left;
+    padding: 10px 16px;
+    font-size: 13px;
+    font-weight: 600;
+    border: none;
+    border-radius: 6px;
+    margin: 2px 8px;
+}
+
+QPushButton.NavButton:hover {
+    background-color: #334155;
+    color: #f8fafc;
+}
+
+QPushButton.NavButton:checked {
+    background-color: #0284c7;
+    color: #ffffff;
+}
+
+/* Primary Action Buttons */
+QPushButton.PrimaryBtn {
+    background-color: #0284c7;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 6px;
+    border: none;
+}
+
+QPushButton.PrimaryBtn:hover {
+    background-color: #0369a1;
+}
+
+QPushButton.SecondaryBtn {
+    background-color: #334155;
+    color: #f8fafc;
+    font-weight: 600;
+    padding: 8px 16px;
+    border-radius: 6px;
+    border: 1px solid #475569;
+}
+
+QPushButton.SecondaryBtn:hover {
+    background-color: #475569;
+}
+
+/* Cards & Containers */
+QFrame.CardFrame {
+    background-color: #1e293b;
+    border: 1px solid #334155;
+    border-radius: 8px;
+}
+
+QFrame.CardFrame:hover {
+    border-color: #38bdf8;
+}
+
+/* Drop Zone Area */
+#DropZoneArea {
+    border: 2px dashed #0284c7;
+    border-radius: 12px;
+    background-color: #1e293b;
+    padding: 40px;
+}
+
+#DropZoneArea:hover {
+    background-color: #0f172a;
+    border-color: #38bdf8;
+}
+
+/* Status Bar */
+#StatusBar {
+    background-color: #0f172a;
+    border-top: 1px solid #334155;
+    color: #94a3b8;
+    font-size: 11px;
+    padding: 4px 12px;
+}
+
+/* Input Fields */
+QLineEdit, QTextEdit, QComboBox {
+    background-color: #1e293b;
+    border: 1px solid #334155;
+    border-radius: 6px;
+    padding: 8px;
+    color: #f8fafc;
+}
+
+QLineEdit:focus, QComboBox:focus {
+    border-color: #38bdf8;
+}
+
+/* Scrollbars */
+QScrollBar:vertical {
+    background: #0f172a;
+    width: 8px;
+}
+
+QScrollBar::handle:vertical {
+    background: #475569;
+    border-radius: 4px;
+}
+
+QProgressBar {
+    border: 1px solid #334155;
+    border-radius: 6px;
+    text-align: center;
+    background-color: #1e293b;
+}
+
+QProgressBar::chunk {
+    background-color: #0284c7;
+    border-radius: 5px;
+}
